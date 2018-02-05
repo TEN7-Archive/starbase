@@ -1,0 +1,32 @@
+name: TEN7 Starbase
+type: profile
+description: 'Base TEN7 install profile.'
+version: 8.1.0-alpha1
+core: 8.x
+dependencies:
+  - node
+  - block
+  - breakpoint
+  - ckeditor
+  - config
+  - menu_link_content
+  - datetime
+  - block_content
+  - editor
+  - image
+  - menu_ui
+  - options
+  - path
+  - page_cache
+  - dynamic_page_cache
+  - taxonomy
+  - dblog
+  - toolbar
+  - field_ui
+  - file
+  - rdf
+  - views
+  - views_ui
+themes:
+  - bartik
+  - seven
