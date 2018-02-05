@@ -704,5 +704,5 @@ else {
   die ('Cannot find settings.*.php file for environment ' . $_SERVER['T7_SITE_ENVIRONMENT']);
 }
 
-$settings['install_profile'] = 'standard';
 $config_directories[CONFIG_SYNC_DIRECTORY] = '../config/sync';
+$settings['install_profile'] = 'starbase';
