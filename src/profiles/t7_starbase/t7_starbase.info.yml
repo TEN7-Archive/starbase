@@ -1,7 +1,7 @@
 name: TEN7 Starbase
 type: profile
 description: 'Base TEN7 install profile.'
-version: 8.1.0-alpha1
+version: 8.x-1.0-alpha1
 core: 8.x
 dependencies:
   - node
