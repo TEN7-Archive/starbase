@@ -1,6 +1,6 @@
 {
-    "name": "drupal/drupal",
-    "description": "Drupal is an open source content management platform powering millions of websites and applications.",
+    "name": "ten7/starbase",
+    "description": "A base project to scaffold a development-ready Drupal 8 site.",
     "type": "project",
     "license": "GPL-2.0-or-later",
     "require": {
@@ -12,6 +12,9 @@
     "minimum-stability": "dev",
     "prefer-stable": true,
     "config": {
+        "platform": {
+            "php": "7.1.9"
+        },
         "sort-packages": true,
         "preferred-install": "dist",
         "autoloader-suffix": "Drupal8"
@@ -37,7 +40,6 @@
         "post-autoload-dump": [
           "Drupal\\Core\\Composer\\Composer::ensureHtaccess"
         ],
-        "post-package-install": "Drupal\\Core\\Composer\\Composer::vendorTestCodeCleanup",
         "post-package-update": "Drupal\\Core\\Composer\\Composer::vendorTestCodeCleanup"
     },
     "repositories": [
