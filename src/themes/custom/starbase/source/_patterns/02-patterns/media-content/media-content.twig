@@ -1,0 +1,44 @@
+{#
+
+Variables
+  - media_direction (media-first, media-last)
+  - media: renderable image or video media
+  - media_title
+  - text: body text, should include generic content markup (ie. <p> wrappers)
+  - media_size: (one-third, half, two-thirds)
+ #}
+
+
+{% set direction = 'flex-row' %}
+{% if media_direction == 'media-last' %}
+  {% set direction = 'flex-row-reverse' %}
+{% endif %}
+
+{% if media_size == 'one-third' %}
+  {% set media_width = 'col-4' %}
+  {% set text_width = 'col-8' %}
+{% endif %}
+
+{% if media_size == 'half' %}
+  {% set media_width = 'col-6' %}
+  {% set text_width = 'col-6' %}
+{% endif %}
+
+{% if media_size == 'two-thirds' %}
+  {% set media_width = 'col-8' %}
+  {% set text_width = 'col-4' %}
+{% endif %}
+
+<div class="container">
+  <div class="media-content row d-flex align-items-center {{ direction }}">
+    <div class="media-content--media {{ media_width }}">
+      {{ media }}
+    </div>
+    <div class="media-content--text {{ text_width }}">
+      {%  if media_title %}
+        <h2 class="media-content--title">{{ media_title }}</h2>
+      {% endif %}
+      {{ text }}
+    </div>
+  </div>
+</div>

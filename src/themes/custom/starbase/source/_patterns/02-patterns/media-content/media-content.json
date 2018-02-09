@@ -1,0 +1,8 @@
+{
+  "media": "<img src=\"http://placehold.it/800x500\" />",
+  "media_direction": "media-first",
+  "media_title": "Lorem Ipsum Dolor Sit",
+  "media_size": "one-third",
+  "text": "A caption to accompany the image. This may even be a few sentences long, so proper line wrapping will be important to observe.",
+  "view_mode": "image_first_50_percent"
+}
