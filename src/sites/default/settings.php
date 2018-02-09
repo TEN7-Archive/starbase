@@ -705,4 +705,4 @@ else {
 }
 
 $config_directories[CONFIG_SYNC_DIRECTORY] = '../config/sync';
-$settings['install_profile'] = 'starbase';
+$settings['install_profile'] = 't7_starbase';

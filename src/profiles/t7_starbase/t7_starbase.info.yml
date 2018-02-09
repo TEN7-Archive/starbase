@@ -14,6 +14,7 @@ dependencies:
   - block_content
   - editor
   - image
+  - responsive_image
   - menu_ui
   - options
   - path

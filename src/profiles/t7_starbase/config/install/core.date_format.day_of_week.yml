@@ -1,0 +1,7 @@
+langcode: en
+status: true
+dependencies: {  }
+id: day_of_week
+label: 'Day of week'
+locked: false
+pattern: l

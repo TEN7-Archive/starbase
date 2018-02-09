@@ -1,0 +1,17 @@
+langcode: en
+status: true
+dependencies: {  }
+id: content_editor
+label: 'Content editor'
+weight: 4
+is_admin: null
+permissions:
+  - 'access administration pages'
+  - 'access content overview'
+  - 'access site reports'
+  - 'access toolbar'
+  - 'access user profiles'
+  - 'change own username'
+  - 'create url aliases'
+  - 'view own unpublished content'
+  - 'view the administration theme'

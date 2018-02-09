@@ -1,0 +1,16 @@
+langcode: en
+status: true
+dependencies: {  }
+name: 'Basic HTML'
+format: basic_html
+weight: 0
+filters:
+  filter_html:
+    id: filter_html
+    provider: filter
+    status: true
+    weight: -10
+    settings:
+      allowed_html: '<p class> <em> <strong> <cite> <blockquote cite> <code> <ul type> <ol start type> <li> <dl> <dt> <dd> <h1 id class> <h2 id class> <h3 id class> <h4 id class> <h5 id class> <h6 id class> <br> <span class id> <img src alt height width data-entity-type data-entity-uuid data-align data-caption align hspace vspace> <a href hreflang class="btn btn-primary btn-info" target> <div> <b> <i> <u> <table cellspacing cellpadding border align ><tbody><tr align><td height valign colspan rowspan><th height valign colspan rowspan scope> <hr>'
+      filter_html_help: true
+      filter_html_nofollow: false
