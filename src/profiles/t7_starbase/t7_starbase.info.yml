@@ -32,6 +32,7 @@ dependencies:
   - admin_toolbar
   - bg_image_formatter
   - block_visibility_groups
+  - components
   - ctools
   - entity_reference_revisions
   - metatag
