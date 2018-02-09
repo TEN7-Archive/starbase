@@ -1,0 +1,64 @@
+uuid: 543383b2-741d-467f-b552-6648157d2f48
+langcode: en
+status: true
+dependencies:
+  config:
+    - filter.format.basic_html
+  module:
+    - ckeditor
+_core:
+  default_config_hash: tZfceJgA2fqmtFpRzQKBNxOl8gFqfQKGWA_K6rO2hPU
+format: basic_html
+editor: ckeditor
+settings:
+  toolbar:
+    rows:
+      -
+        -
+          name: Formatting
+          items:
+            - Bold
+            - Italic
+        -
+          name: Links
+          items:
+            - DrupalLink
+            - DrupalUnlink
+        -
+          name: Lists
+          items:
+            - BulletedList
+            - NumberedList
+            - '-'
+            - Outdent
+            - Indent
+        -
+          name: Media
+          items:
+            - Blockquote
+            - Table
+        -
+          name: Style
+          items:
+            - Format
+            - '-'
+            - Styles
+            - '-'
+        -
+          name: Tools
+          items:
+            - Source
+            - PasteFromWord
+  plugins:
+    language:
+      language_list: un
+    stylescombo:
+      styles: ''
+image_upload:
+  status: false
+  scheme: public
+  directory: inline-images
+  max_size: ''
+  max_dimensions:
+    width: null
+    height: null

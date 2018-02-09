@@ -1,0 +1,12 @@
+uuid: a79a19ae-82a2-4b1d-9d96-40e0917db43e
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: e3453dXHFW5TM24d8Odhumgwd8hIZVPvQv98wnGM7Ro
+id: user
+label: User
+tags:
+  canonical_url: '[user:url]'
+  description: '[site:name]'
+  title: '[user:name] | [site:name]'

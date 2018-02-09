@@ -1,0 +1,26 @@
+uuid: 1ae58dd9-b053-4591-b6c7-75772baf15c0
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.main
+  module:
+    - system
+  theme:
+    - starbase
+_core:
+  default_config_hash: 6FS7UUTWAxmOsIwYOH6XpaISXZXAgqCDBe-Ar7HXYO8
+id: nav_main
+theme: starbase
+region: navigation
+weight: -3
+provider: null
+plugin: 'system_menu_block:main'
+settings:
+  id: 'system_menu_block:main'
+  label: 'Main navigation'
+  provider: system
+  label_display: '0'
+  level: 1
+  depth: 0
+visibility: {  }

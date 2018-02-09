@@ -1,0 +1,15 @@
+name: 'Starbase 3'
+mail: les@ten7.com
+slogan: ''
+page:
+  403: ''
+  404: ''
+  front: /node
+admin_compact_mode: false
+weight_select_max: 100
+langcode: en
+default_langcode: en
+mail_notification: ''
+_core:
+  default_config_hash: ZfmHYJRyCtLPDooVjOaY8N_lJh4M6hv3HWnUcco-D0s
+uuid: ee4e5d28-935c-4548-873d-0b8aeb55f61c

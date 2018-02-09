@@ -1,0 +1,32 @@
+uuid: 2af0b3bc-4491-4454-bbed-ae2d4717152e
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.content_recent
+  module:
+    - system
+    - views
+  theme:
+    - starbase
+_core:
+  default_config_hash: P_KLFQ_nBNvMbtdtcWEpOMN2v03zXQ2hJsK1YgUNwKk
+id: views_recent_content
+theme: starbase
+region: page_sidebar
+weight: 0
+provider: null
+plugin: 'views_block:content_recent-block_1'
+settings:
+  id: 'views_block:content_recent-block_1'
+  label: ''
+  provider: views
+  label_display: visible
+  views_label: ''
+  items_per_page: '5'
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: false
+    context_mapping: {  }

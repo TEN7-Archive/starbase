@@ -1,0 +1,22 @@
+uuid: a22c22b3-c140-4a69-a688-f7616ed05e2b
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - starbase
+_core:
+  default_config_hash: sLfhf4RirhhptEM1cwGWbcqPrFAmNjLGCKIo-yNvFR8
+id: status_messages
+theme: starbase
+region: alert
+weight: -4
+provider: null
+plugin: system_messages_block
+settings:
+  id: system_messages_block
+  label: 'Status messages'
+  provider: system
+  label_display: '0'
+visibility: {  }

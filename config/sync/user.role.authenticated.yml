@@ -1,0 +1,13 @@
+uuid: d5a3325b-908e-41f3-8660-30f4d32d7a14
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: ppQmCPK1Zk1uoDnmsChTQrk5nhaGsXwAxE804CS1o8U
+id: authenticated
+label: 'Authenticated user'
+weight: 1
+is_admin: false
+permissions:
+  - 'access content'
+  - 'use text format basic_html'
