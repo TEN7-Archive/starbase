@@ -4,10 +4,15 @@
     "type": "project",
     "license": "GPL-2.0-or-later",
     "require": {
+        "aleksip/plugin-data-transform": "^1.0.0",
         "composer/installers": "^1.0.24",
         "drupal/core": "~8.4",
-        "drupal/console": "^1.0.2",
-        "drush/drush": "^9.0.0"
+        "drush/drush": "^9.0.0",
+        "pattern-lab/core": "^2.8.0",
+        "pattern-lab/patternengine-twig": "^2.0.0",
+        "pattern-lab/styleguidekit-twig-default": "^3.0.0",
+        "pattern-lab/drupal-twig-components": "^2.0.0",
+        "pattern-lab/plugin-data-inheritance": "^1.0"
     },
     "minimum-stability": "dev",
     "prefer-stable": true,
@@ -33,6 +38,9 @@
     "autoload": {
         "psr-4": {
             "Drupal\\Core\\Composer\\": "core/lib/Drupal/Core/Composer"
+        },
+        "psr-0": {
+            "PatternLab": "patternlab/core/src/"
         }
     },
     "scripts": {
@@ -40,7 +48,26 @@
         "post-autoload-dump": [
           "Drupal\\Core\\Composer\\Composer::ensureHtaccess"
         ],
-        "post-package-update": "Drupal\\Core\\Composer\\Composer::vendorTestCodeCleanup"
+        "post-package-update": [
+            "Drupal\\Core\\Composer\\Composer::vendorTestCodeCleanup",
+            "PatternLab\\Installer::postPackageUpdate"
+        ],
+        "post-install-cmd": [
+            "PatternLab\\Installer::postInstallCmd"
+        ],
+        "post-update-cmd": [
+            "PatternLab\\Installer::postUpdateCmd"
+        ],
+        "post-root-package-install": [
+            "PatternLab\\Installer::setProjectInstall",
+            "PatternLab\\Installer::getConfigOverrides"
+        ],
+        "post-package-install": [
+            "PatternLab\\Installer::postPackageInstall"
+        ],
+        "pre-package-uninstall": [
+            "PatternLab\\Installer::prePackageUninstall"
+        ]
     },
     "repositories": [
         {
