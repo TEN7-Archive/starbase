@@ -1,22 +1,45 @@
 {#
 
 Variables
-  media-direction: media-first, media-last.
-  media: image or video media
-  text: text markup
-  media-size: one-third, half, two-thirds
+  - media_direction (media-first, media-last)
+  - media: image, video media
+  - media_title
+  - text
+  - media_size: (one-third, half, two-thirds)
  #}
 
-{%
-  if media-size
 
-%}
+{% set direction = 'flex-row' %}
+{% if media_direction == 'media-last' %}
+  {% set direction = 'flex-row-reverse' %}
+{% endif %}
 
-<div class="media-content {{ 'media-content--' ~ media-direction }}">
-  <div class="media-content--media col-6">
-    {{ media }}
-  </div>
-  <div class="media-content--text col-6">
-    {{ text }}
+{% if media_size == 'one-third' %}
+  {% set media_width = 'col-4' %}
+  {% set text_width = 'col-8' %}
+{% endif %}
+
+{% if media_size == 'half' %}
+  {% set media_width = 'col-6' %}
+  {% set text_width = 'col-6' %}
+{% endif %}
+
+{% if media_size == 'two-thirds' %}
+  {% set media_width = 'col-8' %}
+  {% set text_width = 'col-4' %}
+{% endif %}
+
+<div class="container">
+  <div class="row media-content d-flex align-items-center {{ direction }}">
+    <div class="media-content--media {{ media_width }}">
+      {{ media }}
+    </div>
+    <div class="media-content--text {{ text_width }}">
+      {%  if media_title %}
+        <h2 class="media-content--title">{{ media_title }}</h2>
+      {% endif %}
+      {{ text }}
+      <h1>{{ width }}</h1>
+    </div>
   </div>
 </div>
