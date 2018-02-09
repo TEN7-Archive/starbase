@@ -1,0 +1,29 @@
+{#
+  This is a composite template used only to display patterns in context. It is
+  used only in PatternLab and may possibly become outdated if Drupal templates change
+
+  See: paragraph--multi-card.html.twig
+
+  - wrapper - 100% page width
+  - bootstrap class 'container-fluid'
+  - this would also take a class for background color or background image
+  #}
+
+{% include("patterns-hero") %}
+
+<div class="container-fluid">
+  <div class="row content-main">
+    <div class="col-12">
+      <div class="content-wrapper">
+        <div class="row">
+          <div class="col-12 col-lg-8">
+            {% include("elements-basic-page--text") %}
+          </div>
+          <div class="col-12 col-lg-3 offset-lg-1 sidebar">
+            {% include("patterns-block-cta") %}
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

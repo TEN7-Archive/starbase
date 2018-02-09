@@ -1,0 +1,24 @@
+<section id="hero-id-{{ bg_img_id }}" class="{{ bg_color }} color-white hero hero-image d-flex align-items-center py-4 py-md-0 row">
+  <div class="col-12">
+    <div class="content-wrapper">
+      <div class="hero-content d-flex align-items-start justify-content-center flex-column my-5">
+        <h2 class="hero__title">{{ title }}</h2>
+
+        {% if subhead %}
+          <p class="subhead">{{ subhead }}</p>
+        {% endif %}
+
+        {% if has_links %}
+          <div class="links">
+
+            {% block links %}
+              <a class="btn btn-primary" href="#">PL Button</a>
+              <a class="btn btn-default" href="#">Another PL Button</a>
+            {% endblock %}
+
+          </div>
+        {% endif %}
+      </div>
+    </div>
+  </div>
+</section>

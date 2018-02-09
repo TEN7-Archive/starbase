@@ -1,0 +1,13 @@
+{
+  "pl_image": {
+    "src": "http://placehold.it/800x500",
+    "alt": "Alt text for this image",
+    "caption": "A caption to accompany the image. This may even be a few sentences long, so proper line wrapping will be important to observe."
+  },
+  "hero": {
+    "title": "Lorem Ipsum Dolor Sit",
+    "subhead": "Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur."
+  },
+  "body": "Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur.",
+  "links": "<a href=\"#\">PL Button</a>"
+}

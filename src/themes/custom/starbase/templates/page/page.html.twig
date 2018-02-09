@@ -1,0 +1,37 @@
+<div class="layout-container">
+
+  {{ page.alert }}
+
+  {{ page.navigation }}
+
+  <header role="banner">
+    {{ page.site_header }}
+  </header>
+
+  {% block main %}
+  <main role="main">
+    <a id="main-content" tabindex="-1"></a>{# link is in html.html.twig #}
+
+    <header role="banner">
+      {{ page.page_header }}
+    </header>
+
+    <div class="layout-content">
+      {{ page.content }}
+    </div>{# /.layout-content #}
+  </main>
+  {% endblock %}
+
+  <footer id="footer" class="container-fluid">
+    <div class="row">
+      <div class="col-12">
+        <div class="footer content-wrapper">
+          {{ page.footer }}
+        </div>
+      </div>
+    </div>
+  </footer>
+
+</div>{# /.layout-container #}
+
+{{ page.mobile_nav }}

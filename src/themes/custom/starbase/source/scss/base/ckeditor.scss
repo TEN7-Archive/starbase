@@ -1,0 +1,8 @@
+/**
+ * Styles to override CKEditor-enhanced fields. This file is declared in the
+ * theme's info.yml file under "ckeditor_stylesheets".
+ */
+
+body.cke_editable {
+  padding: 20px;
+}

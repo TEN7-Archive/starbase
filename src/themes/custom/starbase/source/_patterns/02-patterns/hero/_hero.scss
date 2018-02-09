@@ -1,0 +1,30 @@
+.hero-image {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  //width: 100%;
+  overflow: hidden;
+  background-attachment: scroll;
+}
+.hero {
+  //min-height: 350px;
+}
+.hero__title {
+  font-family: $typography-font-extra-light;
+  font-size: $font-size-h1;
+  line-height: 1.5;
+  a, a:hover {
+    color: $color-text-color;
+  }
+}
+.block-cta--footer {
+  .hero {
+    min-height: 450px;
+  }
+}
+.hero-lg {
+  min-height: 650px;
+}
+#hero-id-patternlab-bg-image {
+  background-image: url("../images/hero-basic.jpeg");
+}

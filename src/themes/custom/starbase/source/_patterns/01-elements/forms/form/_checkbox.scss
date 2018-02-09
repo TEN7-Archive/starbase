@@ -1,0 +1,46 @@
+.checkbox > {
+  label {
+    &::after {
+      content: '';
+      display: table;
+      clear: both;
+    }
+
+    .has-danger & {
+      color: $color-danger;
+    }
+
+    > input[type="checkbox"] {
+      display: none;
+
+      &:checked + .checkmark {
+        background-color: $color-active !important;
+        background-image: $icon-checkbox-checkmark;
+        background-size: 13px 12px;
+        background-position: center center;
+        background-repeat: no-repeat;
+      }
+
+      &:disabled + .checkmark {
+        opacity: $opacity-disabled;
+      }
+    }
+
+    > .checkmark {
+      position: relative;
+      display: inline-block;
+      width: 20px;
+      height: 20px;
+      float: left;
+      color: $color-white;
+      border: 1px solid $color-default-border-color;
+
+      background-color: $color-white;
+      margin: 0 9px 0 0;
+
+      .has-danger & {
+        border: 1px solid $color-danger;
+      }
+    }
+  }
+}

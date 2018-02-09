@@ -1,0 +1,62 @@
+.bg-blue-navy {
+  background-color: $color-blue-navy;
+  color: #fff;
+  a {
+    color: #fff;
+  }
+}
+.bg-blue-primary {
+  background-color: $color-blue-primary;
+  color: #fff;
+  a {
+    color: #fff;
+  }
+}
+.bg-blue-medium {
+  background-color: $color-blue-medium;
+  color: #fff;
+  a {
+    color: #fff;
+  }
+}
+.bg-blue-bright {
+  background-color: $color-blue-bright;
+  color: #fff;
+  a {
+    color: #fff;
+  }
+}
+.bg-yellow {
+  background-color: $color-yellow;
+  color: #fff;
+  a {
+    color: #fff;
+  }
+}
+.bg-yellow-dark {
+  background-color: $color-yellow-dark;
+  color: #fff;
+  a {
+    color: #fff;
+  }
+}
+.bg-transparent {
+  background-color: transparent;
+  color: $color-text-color;
+  a {
+    color: $color-link;
+  }
+}
+.color-white,
+.color-white a {
+  color: #fff;
+}
+.color-default {
+  color: $color-text-color;
+}
+.color-primary {
+  color: $color-blue-primary;
+}
+.color-bright {
+  color: $color-blue-bright;
+}

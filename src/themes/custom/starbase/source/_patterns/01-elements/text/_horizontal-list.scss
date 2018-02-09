@@ -1,0 +1,33 @@
+ol.horizontal-list,
+ul.horizontal-list {
+  margin-left: 0;
+  margin-bottom: 0;
+  li {
+    margin-right: 1rem;
+    margin-bottom: 0;
+    display: inline-block;
+    list-style-type: none;
+    &:before {
+      content: '';
+    }
+  }
+  a {
+    display: block;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-decoration: none;
+  }
+}
+
+ol.horizontal-tabs,
+ul.horizontal-tabs {
+  a {
+    border-bottom: 3px solid $color-blue-medium;
+    &:hover,
+    &:focus {
+      background-color: transparent;
+      border-color: $color-white;
+      text-decoration: none;
+    }
+  }
+}

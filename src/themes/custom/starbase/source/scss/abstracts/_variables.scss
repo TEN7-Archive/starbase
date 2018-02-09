@@ -1,0 +1,139 @@
+/* Breakpoints */
+$breakpoint-xs: 575px;
+$breakpoint-sm: 767px;
+$breakpoint-md: 991px;
+$breakpoint-lg: 1199px;
+
+/* Fonts */
+/* Heading font sizes are saved in vars so that
+   elements that require equal weighting font
+   can be easily adjusted */
+$font-size-base: 18px;
+$font-size-base-mobile: 15px;
+
+$font-size-h1: 54px;
+$font-size-h2: 36px;
+$font-size-h3: 30px;
+$font-size-h4: 24px;
+$font-size-h5: 18px;
+$font-size-h6: 15px;
+
+$font-size-button-large: 16px;
+$font-size-button-medium: 15px;
+$font-size-button-small: 14px;
+
+$font-size-copy-standard: 17px;
+$font-size-copy-small: 15px;
+$font-size-copy-xs-small: 13px;
+$font-size-copy-list-small: 15px;
+$font-size-copy-fine-print: 13px;
+
+$font-size-search-input: 16px;
+$font-size-search-input-prevent-zoom: 16px;
+$font-size-standard-input-select: 16px;
+
+$font-size-form-label: 17px;
+$font-size-form-details: 16px;
+$font-size-form-help-text: 13px;
+
+$typography-font-extra-light: "Montserrat Extra Light", Helvetica, Arial, sans-serif;
+$typography-font-light: "Montserrat Light", Helvetica, Arial, sans-serif;
+$typography-font-regular: "Montserrat Regular", Helvetica, Arial, sans-serif;
+$typography-font-medium: "Montserrat Medium", Helvetica, Arial, sans-serif;
+$typography-font-semi-bold: "Montserrat Semi-bold", Arial, sans-serif;
+$typography-font-bold: "Montserrat Bold", Arial, sans-serif;
+
+/**************
+  Swatch Colors
+***************/
+/* Primary Colors */
+$color-text-color: #333333;
+$color-gray-medium: #999999;
+$color-gray-light: #cccccc;
+
+$color-blue-navy: #0e1235;
+$color-blue-primary: #02319d;
+$color-blue-medium: #0451ba;
+$color-blue-bright: #0971ce;
+$color-blue-light: #daeaf9;
+
+$color-yellow: #fbb300;
+$color-yellow-dark: #f99800;
+
+/* Specific Use colors */
+$color-link: #0971ce;
+$color-text-color: #333333;
+$color-white: #ffffff;
+$color-danger: red;
+$color-success: #84CE7B !default;
+$color-active: $color-blue-medium;
+$color-blue-tag: #daeaf8;
+
+$color-default-background-color: transparent;
+$color-default-background-color-engaged: rgba(255, 255, 255, 0.3);
+$color-default-border-color: #DDDDDD;
+$color-default-border-color-engaged: #DDDDDD;
+
+$color-info-background-color: #fbb300 !important;
+$color-info-background-color-engaged: #f99800 !important;
+$color-info-border-color: #fbb300 !important;
+$color-info-text-color-engaged: #ffffff !important;
+$color-info-border-color-engaged: #f99800 !important;
+
+$color-primary-background-color: #0971ce !important !default;
+$color-primary-background-color-engaged: #023aa8 !important !default;
+$color-primary-border-color: #0971ce !important !default;
+$color-primary-text-color-engaged: #ffffff !important !default;
+$color-primary-border-color-engaged: #023aa8 !important !default;
+
+$color-ghost-positive-background-color: transparent !important;
+$color-ghost-positive-background-color-engaged: #023aa8 !important;
+$color-ghost-positive-border-color: #023aa8 !important;
+$color-ghost-positive-border-color-engaged: #023aa8 !important;
+$color-ghost-positive-text-color: #023aa8 !important;
+$color-ghost-positive-text-color-engaged: #FFFFFF !important;
+
+$opacity-disabled: 0.5;
+
+/* Elements */
+$button-font-weight: normal;
+$button-radius-default: 0px;
+
+/* Icons */
+$icon-checkbox-checkmark: url('../images/icons/checkbox-checkmark.svg');
+$icon-radio-selection-mark: url('../images/icons/radio-selection-mark.svg');
+$icon-arrow-down-navy: url('../images/icons/arrow_down_navy.svg');
+$icon-arrow-down-white: url('../images/icons/arrow_down_white.svg');
+$icon-arrow-down-yellow: url('../images/icons/arrow_down_yellow.svg');
+$icon-arrow-right: url('../images/icons/arrow_right.svg');
+$icon-arrow-right-white: url('../images/icons/arrow_right_white.svg');
+$icon-arrow-left: url('../images/icons/arrow_left.svg');
+$icon-plus-yellow: url('../images/icons/plus-yellow.svg');
+$icon-minus-yellow: url('../images/icons/minus-yellow.svg');
+$icon-blog: url('../images/icons/blog.svg');
+$icon-checkmark-circle: url('../images/icons/checkmark-circle.svg');
+$icon-column: url('../images/icons/column.svg');
+$icon-connect: url('../images/icons/connect.svg');
+$icon-facebook: url('../images/icons/facebook.svg');
+$icon-families: url('../images/icons/families.svg');
+$icon-googleplus: url('../images/icons/google_plus');
+$icon-info: url('../images/icons/info.svg');
+$icon-knowledge-center: url('../images/icons/knowledge_center.svg');
+$icon-linkedin: url('../images/icons/linked_in.svg');
+$icon-practitioners: url('../images/icons/practitioners.svg');
+$icon-search: url('../images/icons/search.svg');
+$icon-search-white: url('../images/icons/search_white.svg');
+$icon-search-navy: url('../images/icons/search_navy.svg');
+$icon-signup: url('../images/icons/sign_up.svg');
+$icon-smile: url('../images/icons/smile.svg');
+$icon-testimonial: url('../images/icons/testimonial.svg');
+$icon-twitter: url('../images/icons/twitter.svg');
+$icon-globe-bright-blue: url('../images/icons/world_bright_blue.svg');
+$icon-globe-navy: url('../images/icons/world_navy.svg');
+$icon-globe-white: url('../images/icons/world_white.svg');
+$icon-mobile-menu-white: url('../images/icons/mobile-menu-white.svg');
+
+$icon-video-list: url('../images/icons/icon-video-list.svg');
+
+$logo_navy: url('../images/icons/OFW_logo_navy_text.svg');
+$logo_white: url('../images/icons/OFW_logo_white_text.svg');

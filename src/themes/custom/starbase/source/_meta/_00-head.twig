@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html class="{{ htmlClass }}">
+	<head>
+		<title>{{ title }}</title>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width" />
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+
+		<link rel="stylesheet" href="../../css/style.css?{{ cacheBuster }}" media="all"/>
+		<link rel="stylesheet" href="../../css/print.css?{{ cacheBuster }}" media="print" />
+		<link rel="stylesheet" href="../../styleguide/css/styleguide-specific.css?{{ cacheBuster }}" media="all"/>
+
+		<script src="/core/assets/vendor/jquery/jquery.min.js"></script>
+		<script src="/core/misc/drupal.js"></script>
+		<script src="../../js/patterns.js"></script>
+
+
+		<!-- Begin Pattern Lab (Required for Pattern Lab to run properly) -->
+		{{ patternLabHead | raw }}
+		<!-- End Pattern Lab -->
+
+
+	</head>
+	<body class="{{ bodyClass }}">
+

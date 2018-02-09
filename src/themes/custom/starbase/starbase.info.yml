@@ -1,0 +1,28 @@
+name: Starbase theme
+type: theme
+description: TEN7 base theme using Pattern Lab.
+package: 'TEN7'
+core: 8.x
+libraries:
+  - starbase/global
+ 
+base theme: stable
+
+regions:
+  alert: Alert
+  navigation: Site Navigation
+  site_header: Site Header
+  page_header: Page Header
+  page_sidebar: Page Sidebar
+  content: Content
+  footer: Footer
+  mobile_nav: Mobile Navigation
+
+# For compatibility with Pattern Lab templates; this list must
+# always be the folders immediately under the `$sourceDir` patterns folder
+# `$sourceDir` = defined in `pattern-lab/config/config.yml` under `sourceDir
+# patterns folder = `$sourceDir` + `_patterns/`
+
+ckeditor_stylesheets:
+  - source/css/style.css
+  - source/css/base/ckeditor.css

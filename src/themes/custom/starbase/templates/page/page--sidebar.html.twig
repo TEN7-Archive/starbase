@@ -1,0 +1,21 @@
+{% extends 'page.html.twig' %}
+
+{% block main %}
+  <main class="container-fluid" role="main">
+    <a id="main-content" tabindex="-1"></a>{# link is in html.html.twig #}
+
+    <header class="row" role="banner">
+      {{ page.page_header }}
+    </header>
+    <div class="content-wrapper mt-4 mt-md-5">
+      <div class="row">
+        <div class="layout-content col-12 col-lg-8">
+          {{ page.content }}
+        </div>
+        <aside class="layout-sidebar-first col-12 col-lg-3 offset-lg-1 sidebar" role="complementary">
+          {{ page.page_sidebar }}
+        </aside>
+      </div>
+    </div>
+  </main>
+{% endblock %}
