@@ -1,0 +1,72 @@
+/*
+Error: Undefined variable: "$color-default-border-color".
+        on line 2 of accordion.scss
+
+1: .accordion-row {
+2:   border-top: 1px solid $color-default-border-color;
+3:   &:last-of-type {
+4:     border-bottom: 1px solid $color-default-border-color;
+5:   }
+6: }
+7: 
+
+Backtrace:
+accordion.scss:2
+/Users/chrisdart/.rvm/gems/ruby-2.4.2/gems/sass-3.4.25/lib/sass/script/tree/variable.rb:49:in `_perform'
+/Users/chrisdart/.rvm/gems/ruby-2.4.2/gems/sass-3.4.25/lib/sass/script/tree/node.rb:58:in `perform'
+/Users/chrisdart/.rvm/gems/ruby-2.4.2/gems/sass-3.4.25/lib/sass/script/tree/list_literal.rb:63:in `block in _perform'
+/Users/chrisdart/.rvm/gems/ruby-2.4.2/gems/sass-3.4.25/lib/sass/script/tree/list_literal.rb:63:in `map'
+/Users/chrisdart/.rvm/gems/ruby-2.4.2/gems/sass-3.4.25/lib/sass/script/tree/list_literal.rb:63:in `_perform'
+/Users/chrisdart/.rvm/gems/ruby-2.4.2/gems/sass-3.4.25/lib/sass/script/tree/node.rb:58:in `perform'
+/Users/chrisdart/.rvm/gems/ruby-2.4.2/gems/sass-3.4.25/lib/sass/tree/visitors/perform.rb:398:in `visit_prop'
+/Users/chrisdart/.rvm/gems/ruby-2.4.2/gems/sass-3.4.25/lib/sass/tree/visitors/base.rb:36:in `visit'
+/Users/chrisdart/.rvm/gems/ruby-2.4.2/gems/sass-3.4.25/lib/sass/tree/visitors/perform.rb:162:in `block in visit'
+/Users/chrisdart/.rvm/gems/ruby-2.4.2/gems/sass-3.4.25/lib/sass/stack.rb:79:in `block in with_base'
+/Users/chrisdart/.rvm/gems/ruby-2.4.2/gems/sass-3.4.25/lib/sass/stack.rb:115:in `with_frame'
+/Users/chrisdart/.rvm/gems/ruby-2.4.2/gems/sass-3.4.25/lib/sass/stack.rb:79:in `with_base'
+/Users/chrisdart/.rvm/gems/ruby-2.4.2/gems/sass-3.4.25/lib/sass/tree/visitors/perform.rb:162:in `visit'
+/Users/chrisdart/.rvm/gems/ruby-2.4.2/gems/sass-3.4.25/lib/sass/tree/visitors/perform.rb:434:in `block (2 levels) in visit_rule'
+/Users/chrisdart/.rvm/gems/ruby-2.4.2/gems/sass-3.4.25/lib/sass/tree/visitors/perform.rb:434:in `map'
+/Users/chrisdart/.rvm/gems/ruby-2.4.2/gems/sass-3.4.25/lib/sass/tree/visitors/perform.rb:434:in `block in visit_rule'
+/Users/chrisdart/.rvm/gems/ruby-2.4.2/gems/sass-3.4.25/lib/sass/tree/visitors/perform.rb:183:in `with_environment'
+/Users/chrisdart/.rvm/gems/ruby-2.4.2/gems/sass-3.4.25/lib/sass/tree/visitors/perform.rb:432:in `visit_rule'
+/Users/chrisdart/.rvm/gems/ruby-2.4.2/gems/sass-3.4.25/lib/sass/tree/visitors/base.rb:36:in `visit'
+/Users/chrisdart/.rvm/gems/ruby-2.4.2/gems/sass-3.4.25/lib/sass/tree/visitors/perform.rb:162:in `block in visit'
+/Users/chrisdart/.rvm/gems/ruby-2.4.2/gems/sass-3.4.25/lib/sass/stack.rb:79:in `block in with_base'
+/Users/chrisdart/.rvm/gems/ruby-2.4.2/gems/sass-3.4.25/lib/sass/stack.rb:115:in `with_frame'
+/Users/chrisdart/.rvm/gems/ruby-2.4.2/gems/sass-3.4.25/lib/sass/stack.rb:79:in `with_base'
+/Users/chrisdart/.rvm/gems/ruby-2.4.2/gems/sass-3.4.25/lib/sass/tree/visitors/perform.rb:162:in `visit'
+/Users/chrisdart/.rvm/gems/ruby-2.4.2/gems/sass-3.4.25/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
+/Users/chrisdart/.rvm/gems/ruby-2.4.2/gems/sass-3.4.25/lib/sass/tree/visitors/base.rb:52:in `map'
+/Users/chrisdart/.rvm/gems/ruby-2.4.2/gems/sass-3.4.25/lib/sass/tree/visitors/base.rb:52:in `visit_children'
+/Users/chrisdart/.rvm/gems/ruby-2.4.2/gems/sass-3.4.25/lib/sass/tree/visitors/perform.rb:171:in `block in visit_children'
+/Users/chrisdart/.rvm/gems/ruby-2.4.2/gems/sass-3.4.25/lib/sass/tree/visitors/perform.rb:183:in `with_environment'
+/Users/chrisdart/.rvm/gems/ruby-2.4.2/gems/sass-3.4.25/lib/sass/tree/visitors/perform.rb:170:in `visit_children'
+/Users/chrisdart/.rvm/gems/ruby-2.4.2/gems/sass-3.4.25/lib/sass/tree/visitors/base.rb:36:in `block in visit'
+/Users/chrisdart/.rvm/gems/ruby-2.4.2/gems/sass-3.4.25/lib/sass/tree/visitors/perform.rb:190:in `visit_root'
+/Users/chrisdart/.rvm/gems/ruby-2.4.2/gems/sass-3.4.25/lib/sass/tree/visitors/base.rb:36:in `visit'
+/Users/chrisdart/.rvm/gems/ruby-2.4.2/gems/sass-3.4.25/lib/sass/tree/visitors/perform.rb:161:in `visit'
+/Users/chrisdart/.rvm/gems/ruby-2.4.2/gems/sass-3.4.25/lib/sass/tree/visitors/perform.rb:10:in `visit'
+/Users/chrisdart/.rvm/gems/ruby-2.4.2/gems/sass-3.4.25/lib/sass/tree/root_node.rb:36:in `css_tree'
+/Users/chrisdart/.rvm/gems/ruby-2.4.2/gems/sass-3.4.25/lib/sass/tree/root_node.rb:29:in `render_with_sourcemap'
+/Users/chrisdart/.rvm/gems/ruby-2.4.2/gems/sass-3.4.25/lib/sass/engine.rb:384:in `_render_with_sourcemap'
+/Users/chrisdart/.rvm/gems/ruby-2.4.2/gems/sass-3.4.25/lib/sass/engine.rb:301:in `render_with_sourcemap'
+/Users/chrisdart/.rvm/gems/ruby-2.4.2/gems/sass-3.4.25/lib/sass/plugin/compiler.rb:492:in `update_stylesheet'
+/Users/chrisdart/.rvm/gems/ruby-2.4.2/gems/sass-3.4.25/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
+/Users/chrisdart/.rvm/gems/ruby-2.4.2/gems/sass-3.4.25/lib/sass/plugin/compiler.rb:209:in `each'
+/Users/chrisdart/.rvm/gems/ruby-2.4.2/gems/sass-3.4.25/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
+/Users/chrisdart/.rvm/gems/ruby-2.4.2/gems/sass-3.4.25/lib/sass/plugin.rb:82:in `update_stylesheets'
+/Users/chrisdart/.rvm/gems/ruby-2.4.2/gems/sass-3.4.25/lib/sass/exec/sass_scss.rb:340:in `watch_or_update'
+/Users/chrisdart/.rvm/gems/ruby-2.4.2/gems/sass-3.4.25/lib/sass/exec/sass_scss.rb:51:in `process_result'
+/Users/chrisdart/.rvm/gems/ruby-2.4.2/gems/sass-3.4.25/lib/sass/exec/base.rb:52:in `parse'
+/Users/chrisdart/.rvm/gems/ruby-2.4.2/gems/sass-3.4.25/lib/sass/exec/base.rb:19:in `parse!'
+/Users/chrisdart/.rvm/gems/ruby-2.4.2/gems/sass-3.4.25/bin/scss:13:in `<top (required)>'
+/Users/chrisdart/.rvm/gems/ruby-2.4.2/bin/scss:23:in `load'
+/Users/chrisdart/.rvm/gems/ruby-2.4.2/bin/scss:23:in `<main>'
+/Users/chrisdart/.rvm/gems/ruby-2.4.2/bin/ruby_executable_hooks:15:in `eval'
+/Users/chrisdart/.rvm/gems/ruby-2.4.2/bin/ruby_executable_hooks:15:in `<main>'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Error: Undefined variable: \"$color-default-border-color\".\A         on line 2 of accordion.scss\A \A 1: .accordion-row {\A 2:   border-top: 1px solid $color-default-border-color;\A 3:   &:last-of-type {\A 4:     border-bottom: 1px solid $color-default-border-color;\A 5:   }\A 6: }\A 7: "; }

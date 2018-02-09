@@ -25,6 +25,9 @@
     background-repeat: no-repeat;
     background-position: left center;
   }
+  &:hover{
+    background-color: $gray-100;
+  }
 }
 .accordion-count {
   font-family: $typography-font-extra-light;
@@ -33,7 +36,6 @@
 }
 
 .accordion-contents {
-  margin-left: 50px;
   display: none;
   a {
     font-size: 1rem;
@@ -51,10 +53,20 @@
 
 // Toggle open state
 .accordion-row.accordion-open {
+
   .accordion-title:before {
-    background-image: $icon-minus-yellow;
   }
   .accordion-contents {
     display: block;
+    background-color: none;
+    ul {
+      li{
+        padding-left: 50px;
+      }
+      li:hover{
+        background-color: $gray-100;
+      }
+    }
+
   }
 }
