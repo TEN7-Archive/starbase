@@ -36,12 +36,12 @@ $font-size-form-label: 17px;
 $font-size-form-details: 16px;
 $font-size-form-help-text: 13px;
 
-$typography-font-extra-light: "Montserrat Extra Light", Helvetica, Arial, sans-serif;
-$typography-font-light: "Montserrat Light", Helvetica, Arial, sans-serif;
-$typography-font-regular: "Montserrat Regular", Helvetica, Arial, sans-serif;
-$typography-font-medium: "Montserrat Medium", Helvetica, Arial, sans-serif;
-$typography-font-semi-bold: "Montserrat Semi-bold", Arial, sans-serif;
-$typography-font-bold: "Montserrat Bold", Arial, sans-serif;
+$typography-font-extra-light: Helvetica, Arial, sans-serif;
+$typography-font-light: Helvetica, Arial, sans-serif;
+$typography-font-regular: Helvetica, Arial, sans-serif;
+$typography-font-medium: Helvetica, Arial, sans-serif;
+$typography-font-semi-bold: Arial, sans-serif;
+$typography-font-bold: Arial, sans-serif;
 
 /**************
   Swatch Colors
@@ -115,12 +115,9 @@ $icon-checkmark-circle: url('../images/icons/checkmark-circle.svg');
 $icon-column: url('../images/icons/column.svg');
 $icon-connect: url('../images/icons/connect.svg');
 $icon-facebook: url('../images/icons/facebook.svg');
-$icon-families: url('../images/icons/families.svg');
 $icon-googleplus: url('../images/icons/google_plus');
 $icon-info: url('../images/icons/info.svg');
-$icon-knowledge-center: url('../images/icons/knowledge_center.svg');
 $icon-linkedin: url('../images/icons/linked_in.svg');
-$icon-practitioners: url('../images/icons/practitioners.svg');
 $icon-search: url('../images/icons/search.svg');
 $icon-search-white: url('../images/icons/search_white.svg');
 $icon-search-navy: url('../images/icons/search_navy.svg');
@@ -134,6 +131,3 @@ $icon-globe-white: url('../images/icons/world_white.svg');
 $icon-mobile-menu-white: url('../images/icons/mobile-menu-white.svg');
 
 $icon-video-list: url('../images/icons/icon-video-list.svg');
-
-$logo_navy: url('../images/icons/OFW_logo_navy_text.svg');
-$logo_white: url('../images/icons/OFW_logo_white_text.svg');
