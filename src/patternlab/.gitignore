@@ -1,0 +1,6 @@
+.DS_Store
+export/*
+public/*
+!public/.htaccess
+source/styleguide/*
+vendor/*
