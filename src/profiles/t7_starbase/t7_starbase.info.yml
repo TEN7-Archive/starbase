@@ -28,6 +28,21 @@ dependencies:
   - rdf
   - views
   - views_ui
+# Contrib modules
+  - admin_toolbar
+  - bg_image_formatter
+  - block_visibility_groups
+  - ctools
+  - entity_reference_revisions
+  - metatag
+  - metatag_open_graph
+  - metatag_twitter_cards
+  - paragraphs
+  - pathauto
+  - redirect
+  - simple_sitemap
+  - stage_file_proxy
+  - token
 themes:
-  - bartik
+  - starbase
   - seven
