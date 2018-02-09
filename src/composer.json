@@ -61,12 +61,6 @@
             "Drupal\\Core\\Composer\\Composer::vendorTestCodeCleanup",
             "PatternLab\\Installer::postPackageUpdate"
         ],
-        "post-install-cmd": [
-            "PatternLab\\Installer::postInstallCmd"
-        ],
-        "post-update-cmd": [
-            "PatternLab\\Installer::postUpdateCmd"
-        ],
         "post-root-package-install": [
             "PatternLab\\Installer::setProjectInstall",
             "PatternLab\\Installer::getConfigOverrides"
