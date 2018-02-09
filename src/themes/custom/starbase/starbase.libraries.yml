@@ -6,7 +6,6 @@ global:
       source/css/style.css: {}
   js:
     source/vendor/bootstrap-4.0.0/dist/js/bootstrap.bundle.js: {}
-    source/js/scripts.js: {}
   dependencies:
     - core/drupal
     - core/jquery
