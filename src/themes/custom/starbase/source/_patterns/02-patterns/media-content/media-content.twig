@@ -1,0 +1,22 @@
+{#
+
+Variables
+  media-direction: media-first, media-last.
+  media: image or video media
+  text: text markup
+  media-size: one-third, half, two-thirds
+ #}
+
+{%
+  if media-size
+
+%}
+
+<div class="media-content {{ 'media-content--' ~ media-direction }}">
+  <div class="media-content--media col-6">
+    {{ media }}
+  </div>
+  <div class="media-content--text col-6">
+    {{ text }}
+  </div>
+</div>
