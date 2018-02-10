@@ -26,3 +26,14 @@ regions:
 ckeditor_stylesheets:
   - source/css/style.css
   - source/css/base/ckeditor.css
+
+component-libraries:
+  elements:
+    paths:
+      - source/_patterns/01-elements
+  patterns:
+    paths:
+      - source/_patterns/02-patterns
+  pl-compositions:
+    paths:
+      - source/_patterns/03-pl-compositions

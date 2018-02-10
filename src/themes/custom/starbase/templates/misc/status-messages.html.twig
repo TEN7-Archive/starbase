@@ -30,7 +30,7 @@
 {% for type, messages in message_list %}
   {% for message in messages %}
     <div class="my-3">
-      {% embed 'themes/custom/starbase/source/_patterns/02-patterns/alert/alert.twig' with {
+      {% embed '@patterns/alert/alert.twig' with {
           "text": message,
           "alert_type": status_map[type]
         }
