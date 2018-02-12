@@ -1,0 +1,28 @@
+.jumbotron {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  overflow: hidden;
+  background-attachment: scroll;
+}
+
+.jumbotron__callout {
+  background: $black;
+  opacity: 0.75;
+  @include media-breakpoint-down(sm) {
+    margin-top: 5rem;
+  }
+}
+
+.jumbotron__title {
+  a, a:hover {
+    color: $color-text-color;
+  }
+}
+
+#jumbotron-id-placeholdit {
+  background-image: url("https://placehold.it/800x500");
+}
+#jumbotron-id-placekitten {
+  background-image: url("https://placekitten.com/1000/500");
+}

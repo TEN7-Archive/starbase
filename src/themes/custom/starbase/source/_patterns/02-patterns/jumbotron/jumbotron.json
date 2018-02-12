@@ -1,0 +1,7 @@
+{
+  "title": "{{ title }} Ipsum Dolor Sit",
+  "subhead": "{{ subhead }} minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur.",
+  "bg_img_id": "placekitten",
+  "bg_color": "bg-blue-navy",
+  "has_links": true
+}
