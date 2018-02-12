@@ -11,7 +11,7 @@
 ini_set('display_errors', 1);
 ini_set('display_startup_errors', 1);
 $config['system.logging']['error_level'] = 'verbose';
-$settings['rebuild_access'] = TRUE;
+#$settings['rebuild_access'] = TRUE;
 $settings['skip_permissions_hardening'] = TRUE;
 
 /**
