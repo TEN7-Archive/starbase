@@ -4,3 +4,21 @@
  * @file
  * Install, update and uninstall functions for the starbase installation profile.
  */
+
+/**
+ * Implements hook_install().
+ * Perform actions to set up the site for this profile.
+ *
+ * @see system_install()
+ */
+function t7_starbase_install() {
+  $system_site = \Drupal::configFactory()->getEditable('system.site');
+  // Set front page to "node".
+  $system_site->set('page.front', '/node');
+  // Set UUID so that it's the same for everyone during development.
+  $system_site->set('uuid', 'ee4e5d28-935c-4548-873d-0b8aeb55f61c');
+  $system_site->save(TRUE);
+  // Undo sites directory permissions hardening.
+  chmod(DRUPAL_ROOT . '/sites/default', 0755);
+  chmod(DRUPAL_ROOT . '/sites/default/settings.php', 0644);
+}

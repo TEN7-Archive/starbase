@@ -1,3 +1,4 @@
+uuid: 3ec88def-6ae0-486d-9fa0-1331c8764855
 langcode: en
 status: true
 dependencies:
@@ -5,6 +6,8 @@ dependencies:
     - system
   theme:
     - starbase
+_core:
+  default_config_hash: WQAcQW_QaR4xqJ4m0SLipba3c7fmnAmxA0B0P9FAz_0
 id: breadcrumbs
 theme: starbase
 region: page_header

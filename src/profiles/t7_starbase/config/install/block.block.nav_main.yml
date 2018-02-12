@@ -1,3 +1,4 @@
+uuid: 1ae58dd9-b053-4591-b6c7-75772baf15c0
 langcode: en
 status: true
 dependencies:
@@ -7,6 +8,8 @@ dependencies:
     - system
   theme:
     - starbase
+_core:
+  default_config_hash: 6FS7UUTWAxmOsIwYOH6XpaISXZXAgqCDBe-Ar7HXYO8
 id: nav_main
 theme: starbase
 region: navigation

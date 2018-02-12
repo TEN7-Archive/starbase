@@ -1,6 +1,9 @@
+uuid: 840c6565-a421-4d87-9cd3-356fa778653d
 langcode: en
 status: true
 dependencies: {  }
+_core:
+  default_config_hash: PUyfzsCu8Nis7u7DkXy1geCjhIz8-z61NNv5MmMmkGQ
 id: content_editor
 label: 'Content editor'
 weight: 4

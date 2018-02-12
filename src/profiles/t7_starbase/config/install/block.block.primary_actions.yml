@@ -1,8 +1,11 @@
+uuid: 67c0ec03-91fa-4051-8af7-0ded1d82a832
 langcode: en
 status: true
 dependencies:
   theme:
     - starbase
+_core:
+  default_config_hash: NlWn9LeJFIoCO41t6lieJp4csPDbhF6E6E5Ysg-G1HQ
 id: primary_actions
 theme: starbase
 region: page_header

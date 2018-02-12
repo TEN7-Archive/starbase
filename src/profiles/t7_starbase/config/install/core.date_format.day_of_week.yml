@@ -1,6 +1,9 @@
+uuid: d7caa98a-28a9-4b2f-92a0-cebef5265c6c
 langcode: en
 status: true
 dependencies: {  }
+_core:
+  default_config_hash: k-Ti6UkjJjohYzRXlzb5askQQ5H_eg0B3kuJwCGSf7g
 id: day_of_week
 label: 'Day of week'
 locked: false

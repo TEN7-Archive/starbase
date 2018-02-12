@@ -1,6 +1,9 @@
+uuid: da511ed6-f210-468e-a92b-b5aa5888f928
 langcode: en
 status: true
 dependencies: {  }
+_core:
+  default_config_hash: sd4VnEiPqIfH0_oCYWtmgnkWWca_pujxHdvBJ4rGs5c
 id: site_manager
 label: 'Site manager'
 weight: 3

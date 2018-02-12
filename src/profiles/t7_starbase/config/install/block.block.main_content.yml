@@ -1,3 +1,4 @@
+uuid: bf2f70a1-383c-4b15-ada4-080461176118
 langcode: en
 status: true
 dependencies:
@@ -5,6 +6,8 @@ dependencies:
     - system
   theme:
     - starbase
+_core:
+  default_config_hash: MBY0Tc4JnMrJxYpyvtzw7Lpjhb0L4AykDraJcsxXpD0
 id: main_content
 theme: starbase
 region: content

@@ -44,3 +44,5 @@ field_rewrite_elements:
   ins: INS
   q: Q
   s: S
+_core:
+  default_config_hash: DIEEMTgW5Y3KOEmvekACuFZnlG_CJ4PVv6zje8rotKE

@@ -1,3 +1,4 @@
+uuid: 49fd1200-9ec0-4457-898b-56f369392091
 langcode: en
 status: true
 dependencies:
@@ -5,6 +6,8 @@ dependencies:
     - system
   theme:
     - starbase
+_core:
+  default_config_hash: C2BrEwDDUPzsfRdFJu3WnxJFSP2-eEwT_Yjb8sTPFXE
 id: sitebranding
 theme: starbase
 region: site_header

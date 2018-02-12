@@ -1,6 +1,9 @@
+uuid: e2d74d36-6421-47fb-b660-667308b39f74
 langcode: en
 status: true
 dependencies: {  }
+_core:
+  default_config_hash: ik04shqBV_O9Crj47EOlnu4EJtGUSlMiUM-DEdACCUY
 name: 'Basic HTML'
 format: basic_html
 weight: 0
