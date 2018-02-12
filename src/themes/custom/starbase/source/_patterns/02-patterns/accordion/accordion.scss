@@ -10,7 +10,6 @@
   padding-bottom: 1rem;
   margin-bottom: 0;
   font-size: 1rem;
-  font-family: $typography-font-medium;
   cursor: pointer;
   &:before {
     content: '';
@@ -20,20 +19,17 @@
     margin-right: 30px;
     position: relative;
     top: 3px;
-    background-image: $icon-plus-yellow;
-    background-size: 18px 18px;
-    background-repeat: no-repeat;
-    background-position: left center;
+  }
+  &:hover{
+    background-color: $gray-100;
   }
 }
 .accordion-count {
-  font-family: $typography-font-extra-light;
   color: $color-gray-medium;
   margin-left: 5px;
 }
 
 .accordion-contents {
-  margin-left: 50px;
   display: none;
   a {
     font-size: 1rem;
@@ -51,8 +47,8 @@
 
 // Toggle open state
 .accordion-row.accordion-open {
+
   .accordion-title:before {
-    background-image: $icon-minus-yellow;
   }
   .accordion-contents {
     display: block;
