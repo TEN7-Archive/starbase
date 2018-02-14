@@ -2,11 +2,18 @@
   class="jumbotron jumbotron-fluid {{ bg_color }}"
   id="jumbotron-id-{{ bg_img_id }}"
 >
-  <div class="container-fluid">
+  <div class="container">
     <div class="row">
-      <div class="jumbotron__callout col-md-5 offset-md-1 p-3">
+      <div class="jumbotron__callout col-md-5 py-3">
+
+        {% if title %}
         <h2 class="jumbotron__title">{{ title }}</h2>
-        <p class="jumbotron__subhead">{{ subhead }}</p>
+        {% endif %}
+
+        {% if subhead %}
+          <p class="jumbotron__subhead">{{ subhead }}</p>
+        {% endif %}
+
         {% if has_links %}
           <div class="jumbotron__links">
             {% block links %}
@@ -15,6 +22,7 @@
             {% endblock %}
           </div>
         {% endif %}
+
       </div>
     </div>
   </div>
