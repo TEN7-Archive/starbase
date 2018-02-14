@@ -36,6 +36,7 @@ dependencies:
   - ctools
   - devel
   - entity_reference_revisions
+  - field_group
   - metatag
   - metatag_open_graph
   - metatag_twitter_cards
