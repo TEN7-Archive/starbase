@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "15a686049fa5b77a8cfa22d84e0ea1bd",
+    "content-hash": "bdc25c592b422317d0da29b8ffddc7af",
     "packages": [
         {
             "name": "alchemy/zippy",
@@ -2319,6 +2319,52 @@
             "support": {
                 "source": "http://cgit.drupalcode.org/token"
             }
+        },
+        {
+            "name": "drupal/view_mode_selector",
+            "version": "dev-1.x",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupal.org/project/view_mode_selector",
+                "reference": "11c9ad2148d5b9c3bd552883da54b401736d0b31"
+            },
+            "require": {
+                "drupal/core": "~8.0"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-1.x": "1.x-dev"
+                },
+                "drupal": {
+                    "version": "8.x-1.x-dev",
+                    "datestamp": "1493198644",
+                    "security-coverage": {
+                        "status": "not-covered",
+                        "message": "Dev releases are not covered by Drupal security advisories."
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "axe312",
+                    "homepage": "https://www.drupal.org/user/682114"
+                },
+                {
+                    "name": "yannickoo",
+                    "homepage": "https://www.drupal.org/user/531118"
+                }
+            ],
+            "description": "Provides a new field type for changing the view mode of an entity.",
+            "homepage": "https://www.drupal.org/project/view_mode_selector",
+            "support": {
+                "source": "http://cgit.drupalcode.org/view_mode_selector"
+            },
+            "time": "2018-02-12T12:03:58+00:00"
         },
         {
             "name": "drush/drush",
@@ -5667,7 +5713,8 @@
     "aliases": [],
     "minimum-stability": "dev",
     "stability-flags": {
-        "drupal/stage_file_proxy": 15
+        "drupal/stage_file_proxy": 15,
+        "drupal/view_mode_selector": 20
     },
     "prefer-stable": true,
     "prefer-lowest": false,
