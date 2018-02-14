@@ -46,6 +46,7 @@ dependencies:
   - simple_sitemap
   - stage_file_proxy
   - token
+  - view_mode_selector
 themes:
   - starbase
   - seven
