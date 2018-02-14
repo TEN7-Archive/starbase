@@ -1,0 +1,30 @@
+uuid: d8c60719-ce54-45bf-8dfc-a5e9893821fd
+langcode: en
+status: true
+dependencies:
+  module:
+    - options
+    - paragraphs
+id: paragraph.field_image_size
+field_name: field_image_size
+entity_type: paragraph
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: one-third
+      label: One-third
+    -
+      value: half
+      label: Half
+    -
+      value: two-thirds
+      label: Two-thirds
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false
