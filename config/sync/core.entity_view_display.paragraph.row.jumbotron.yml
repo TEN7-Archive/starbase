@@ -1,8 +1,9 @@
-uuid: eef6c108-37b6-4167-837e-2c51a30931d3
+uuid: 3d260dd9-a3e3-4326-bbfc-d61fa06cb2fa
 langcode: en
 status: true
 dependencies:
   config:
+    - core.entity_view_mode.paragraph.jumbotron
     - field.field.paragraph.row.field_background_image
     - field.field.paragraph.row.field_body
     - field.field.paragraph.row.field_image
@@ -21,13 +22,13 @@ dependencies:
     - responsive_bg_image_formatter
     - text
     - view_mode_selector
-id: paragraph.row.default
+id: paragraph.row.jumbotron
 targetEntityType: paragraph
 bundle: row
-mode: default
+mode: jumbotron
 content:
   field_background_image:
-    weight: 1
+    weight: 3
     label: hidden
     settings:
       image_style: ''
@@ -46,14 +47,14 @@ content:
     type: responsive_bg_image_formatter
     region: content
   field_body:
-    weight: 3
+    weight: 5
     label: hidden
     settings: {  }
     third_party_settings: {  }
     type: text_default
     region: content
   field_image:
-    weight: 7
+    weight: 9
     label: hidden
     settings:
       image_style: ''
@@ -62,21 +63,21 @@ content:
     type: image
     region: content
   field_image_order:
-    weight: 8
+    weight: 7
     label: hidden
     settings: {  }
     third_party_settings: {  }
     type: list_default
     region: content
   field_image_size:
-    weight: 9
+    weight: 8
     label: hidden
     settings: {  }
     third_party_settings: {  }
     type: list_default
     region: content
   field_links:
-    weight: 4
+    weight: 6
     label: hidden
     settings:
       trim_length: 80
@@ -88,14 +89,14 @@ content:
     type: link
     region: content
   field_row_background_color:
-    weight: 5
+    weight: 2
     label: hidden
     settings: {  }
     third_party_settings: {  }
     type: list_default
     region: content
   field_row_link_id:
-    weight: 6
+    weight: 1
     label: hidden
     settings:
       link_to_entity: false
@@ -110,7 +111,7 @@ content:
     type: view_mode_selector
     region: content
   field_title:
-    weight: 2
+    weight: 4
     label: hidden
     settings:
       link_to_entity: false
