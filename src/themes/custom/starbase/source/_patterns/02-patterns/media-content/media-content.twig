@@ -15,26 +15,26 @@ Variables
 {% endif %}
 
 {% if media_size == 'one-third' %}
-  {% set media_width = 'col-4' %}
-  {% set text_width = 'col-8' %}
+  {% set media_width = 'col-md-4' %}
+  {% set text_width = 'col-md-8' %}
 {% endif %}
 
 {% if media_size == 'half' %}
-  {% set media_width = 'col-6' %}
-  {% set text_width = 'col-6' %}
+  {% set media_width = 'col-md-6' %}
+  {% set text_width = 'col-md-6' %}
 {% endif %}
 
 {% if media_size == 'two-thirds' %}
-  {% set media_width = 'col-8' %}
-  {% set text_width = 'col-4' %}
+  {% set media_width = 'col-md-8' %}
+  {% set text_width = 'col-md-4' %}
 {% endif %}
 
 <div class="container">
   <div class="media-content row d-flex align-items-center {{ direction }}">
-    <div class="media-content--media {{ media_width }}">
+    <div class="media-content--media col-12 {{ media_width }}">
       {{ media }}
     </div>
-    <div class="media-content--text {{ text_width }}">
+    <div class="media-content--text col-12 {{ text_width }} pt-3 pt-md-0">
       {%  if media_title %}
         <h2 class="media-content--title">{{ media_title }}</h2>
       {% endif %}
