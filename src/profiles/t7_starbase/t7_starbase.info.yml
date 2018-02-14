@@ -42,6 +42,7 @@ dependencies:
   - paragraphs
   - pathauto
   - redirect
+  - responsive_bg_image_formatter
   - simple_sitemap
   - stage_file_proxy
   - token
