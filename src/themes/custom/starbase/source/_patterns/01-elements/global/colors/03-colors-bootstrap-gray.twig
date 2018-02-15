@@ -1,0 +1,13 @@
+<div class="container">
+  <div class="mb-4">
+    <ul class="sg-colors mb-4">
+      {% for color in colors %}
+        <li>
+          <span class="sg-swatch" style="background: var(--{{ color }});"></span>
+          <div class="sg-label">$gray-{{ color }}</div>
+          <div class="sg-label color" data-color="{{ color }}"></div>
+        </li>
+      {% endfor %}
+    </ul>
+  </div>
+</div>
