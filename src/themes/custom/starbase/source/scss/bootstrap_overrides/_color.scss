@@ -91,7 +91,7 @@ $grays: (
  */
 $primary:       $dark-green;
 //$secondary:     $gray-600;
-$success:       $green;
+//$success:       $green;
 //$info:          $blue;
 //$warning:       $yellow;
 //$danger:        $red;
@@ -113,3 +113,16 @@ $colors: map_merge($custom_colors, $colors);
 
 // Add grays
 $colors: map_merge($grays, $colors);
+
+/**
+ * Additional color settings
+ */
+// Set a specific jump point for requesting color jumps
+// $theme-color-interval:      8%;
+
+// The yiq lightness value that determines when the lightness of color changes from "dark" to "light". Acceptable values are between 0 and 255.
+// $yiq-contrasted-threshold: 150;
+
+// Customize the light and dark text colors for use in our YIQ color contrast function.
+//$yiq-text-dark: $gray-900;
+//$yiq-text-light: $white;
