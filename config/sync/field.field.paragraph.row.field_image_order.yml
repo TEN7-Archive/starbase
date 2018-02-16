@@ -1,0 +1,23 @@
+uuid: 702d80ed-b701-45e9-8fa9-6b33b4230951
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_image_order
+    - paragraphs.paragraphs_type.row
+  module:
+    - options
+id: paragraph.row.field_image_order
+field_name: field_image_order
+entity_type: paragraph
+bundle: row
+label: 'Image Order'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: media-first
+default_value_callback: ''
+settings: {  }
+field_type: list_string

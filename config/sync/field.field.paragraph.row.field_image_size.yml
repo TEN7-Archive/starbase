@@ -1,0 +1,23 @@
+uuid: 84e872a0-7824-4039-b6f7-3c365b05b955
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_image_size
+    - paragraphs.paragraphs_type.row
+  module:
+    - options
+id: paragraph.row.field_image_size
+field_name: field_image_size
+entity_type: paragraph
+bundle: row
+label: 'Image Size'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: half
+default_value_callback: ''
+settings: {  }
+field_type: list_string

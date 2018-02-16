@@ -1,0 +1,121 @@
+uuid: 3d260dd9-a3e3-4326-bbfc-d61fa06cb2fa
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.paragraph.jumbotron
+    - field.field.paragraph.row.field_background_image
+    - field.field.paragraph.row.field_body
+    - field.field.paragraph.row.field_image
+    - field.field.paragraph.row.field_image_order
+    - field.field.paragraph.row.field_image_size
+    - field.field.paragraph.row.field_links
+    - field.field.paragraph.row.field_row_background_color
+    - field.field.paragraph.row.field_row_link_id
+    - field.field.paragraph.row.field_row_view_mode_selector
+    - field.field.paragraph.row.field_title
+    - paragraphs.paragraphs_type.row
+  module:
+    - bg_image_formatter
+    - image
+    - link
+    - options
+    - text
+    - view_mode_selector
+id: paragraph.row.jumbotron
+targetEntityType: paragraph
+bundle: row
+mode: jumbotron
+content:
+  field_background_image:
+    weight: 3
+    label: hidden
+    settings:
+      image_style: ''
+      css_settings:
+        bg_image_selector: '#jumbotron-id-[paragraph:id]'
+        bg_image_z_index: auto
+        bg_image_color: '#FFFFFF'
+        bg_image_x: left
+        bg_image_y: top
+        bg_image_attachment: scroll
+        bg_image_repeat: no-repeat
+        bg_image_background_size: ''
+        bg_image_important: '1'
+        bg_image_background_size_ie8: 0
+    third_party_settings: {  }
+    type: bg_image_formatter
+    region: content
+  field_body:
+    weight: 5
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_image:
+    weight: 9
+    label: hidden
+    settings:
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+    region: content
+  field_image_order:
+    weight: 7
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: list_default
+    region: content
+  field_image_size:
+    weight: 8
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: list_default
+    region: content
+  field_links:
+    weight: 6
+    label: hidden
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    type: link
+    region: content
+  field_row_background_color:
+    weight: 2
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: list_default
+    region: content
+  field_row_link_id:
+    weight: 1
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_row_view_mode_selector:
+    weight: 0
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: view_mode_selector
+    region: content
+  field_title:
+    weight: 4
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+hidden: {  }

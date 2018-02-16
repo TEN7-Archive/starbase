@@ -1,0 +1,9 @@
+uuid: 369507fa-cdc6-4790-96f7-a79078307a3e
+langcode: en
+status: true
+dependencies: {  }
+id: row
+label: Row
+icon_uuid: null
+description: 'Generic multi-purpose paragraph type with multiple view mode options.'
+behavior_plugins: {  }

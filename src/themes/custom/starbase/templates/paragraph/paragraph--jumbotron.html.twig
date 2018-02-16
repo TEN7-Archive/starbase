@@ -1,0 +1,25 @@
+
+{% block paragraph %}
+  {# We need to render the bg image field so the responsive bg image
+     formatter initiates, but we don't actually need it in our template,
+     so we do that in the default paragraph block
+    #}
+  {{ content.field_background_image }}
+{% endblock paragraph %}
+
+{% embed "themes/custom/starbase/source/_patterns/02-patterns/jumbotron/jumbotron.twig"
+with {
+"title" : content.field_title|field_value,
+"subhead" : content.field_subheader|field_value,
+"bg_color" : content.field_row_background_color|field_value,
+"has_links" : content.field_links.0 ? true : false,
+"links" : content.field_para_actions,
+"bg_img_id" : paragraph.id()
+}
+%}
+  {% block links %}
+    {{ content.field_links }}
+  {% endblock %}
+
+{% endembed %}
+

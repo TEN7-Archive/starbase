@@ -1,0 +1,21 @@
+uuid: ec503273-ec63-4f40-9482-7da7b019335c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_row_background_color
+    - paragraphs.paragraphs_type.row
+  module:
+    - options
+id: paragraph.row.field_row_background_color
+field_name: field_row_background_color
+entity_type: paragraph
+bundle: row
+label: 'Background Color'
+description: '(optional) Full-bleed background color for the row.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string
