@@ -16,10 +16,10 @@ dependencies:
     - field.field.paragraph.row.field_title
     - paragraphs.paragraphs_type.row
   module:
+    - bg_image_formatter
     - image
     - link
     - options
-    - responsive_bg_image_formatter
     - text
     - view_mode_selector
 id: paragraph.row.jumbotron
@@ -44,7 +44,7 @@ content:
         bg_image_important: '1'
         bg_image_background_size_ie8: 0
     third_party_settings: {  }
-    type: responsive_bg_image_formatter
+    type: bg_image_formatter
     region: content
   field_body:
     weight: 5
