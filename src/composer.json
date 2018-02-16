@@ -19,6 +19,7 @@
         "drupal/redirect": "^1.0",
         "drupal/simple_sitemap": "^2.0",
         "drupal/stage_file_proxy": "^1.0@alpha",
+        "drupal/twig_field_value": "^1.1",
         "drupal/view_mode_selector": "1.x-dev",
         "drush/drush": "^9.0.0",
         "pattern-lab/core": "^2.8.0",
