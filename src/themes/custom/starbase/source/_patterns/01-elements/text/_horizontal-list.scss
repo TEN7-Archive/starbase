@@ -2,6 +2,7 @@ ol.horizontal-list,
 ul.horizontal-list {
   margin-left: 0;
   margin-bottom: 0;
+  background-color: $gray-300;
   li {
     margin-right: 1rem;
     margin-bottom: 0;
@@ -22,11 +23,11 @@ ul.horizontal-list {
 ol.horizontal-tabs,
 ul.horizontal-tabs {
   a {
-    border-bottom: 3px solid $color-blue-medium;
+    border-bottom: 3px solid transparent;
     &:hover,
     &:focus {
       background-color: transparent;
-      border-color: $color-white;
+      border-color: $white;
       text-decoration: none;
     }
   }
