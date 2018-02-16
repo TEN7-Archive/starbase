@@ -1,11 +1,13 @@
 <div class="container">
   <div class="mb-4">
-    <ul class="sg-colors mb-4">
+    <ul class="sg-color-items mb-4 list-unstyled d-flex flex-wrap">
       {% for color in colors %}
-        <li>
-          <span class="sg-swatch" style="background: var(--{{ color }});"></span>
-          <div class="sg-label">${{ color }}</div>
-          <div class="sg-label color" data-color="{{ color }}"></div>
+        <li class="sg-color-item p-2 border mx-1 mb-3">
+          <div class="w-100 h-66 mb-2" style="background: var(--{{ color }});"></div>
+          <div class="d-flex flex-wrap">
+            <div class="mr-2 mb-2"><code><var>${{ color }}</var></code></div>
+            <div><code class="color" data-color="{{ color }}"></code></div>
+          </div>
         </li>
       {% endfor %}
     </ul>
