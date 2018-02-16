@@ -47,6 +47,7 @@ dependencies:
   - simple_sitemap
   - stage_file_proxy
   - token
+  - twig_field_value
   - view_mode_selector
 themes:
   - starbase
