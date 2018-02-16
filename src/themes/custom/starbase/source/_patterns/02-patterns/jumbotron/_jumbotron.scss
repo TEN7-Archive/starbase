@@ -7,14 +7,15 @@
 }
 
 .jumbotron__callout {
-  background: $black;
-  opacity: 0.75;
+  //background: $black;
+  //opacity: 0.75;
   @include media-breakpoint-down(sm) {
     margin-top: 5rem;
   }
 }
 
 .jumbotron__title {
+  color: $white;
   a, a:hover {
     color: $color-text-color;
   }
