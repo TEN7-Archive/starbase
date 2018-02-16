@@ -6,16 +6,16 @@
  *
  * @see https://getbootstrap.com/docs/4.0/utilities/spacing/
  */
-//$spacer: 1rem;
-//$spacers: ();
-//$spacers: map-merge((
-//  0: 0,
-//  1: ($spacer * .25),
-//  2: ($spacer * .5),
-//  3: $spacer,
-//  4: ($spacer * 1.5),
-//  5: ($spacer * 3)
-//), $spacers);
+$spacer: 1rem;
+$spacers: ();
+$spacers: map-merge((
+  0: 0,
+  1: ($spacer * .25),
+  2: ($spacer * .5),
+  3: $spacer,
+  4: ($spacer * 1.5),
+  5: ($spacer * 3)
+), $spacers);
 
 // This variable affects the `.h-*` and `.w-*` classes.
 $sizes: ();

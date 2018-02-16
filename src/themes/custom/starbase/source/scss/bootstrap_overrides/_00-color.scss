@@ -52,6 +52,19 @@ $custom_colors: (
 );
 
 /**
+ * Additional non-brand Bootstrap utility colors.
+ */
+$blue:    #007bff;
+$indigo:  #6610f2;
+$purple:  #6f42c1;
+$pink:    #e83e8c;
+$red:     #dc3545;
+$orange:  #fd7e14;
+$yellow:  #ffc107;
+$cyan:    #17a2b8;
+$highlighter: #fcf8e3;
+
+/**
  * Bootstrap gray.
  * Override these variables as you see fit.
  */
@@ -90,13 +103,25 @@ $grays: (
  * custom variables from above.
  */
 $primary:       $green;
-//$secondary:     $gray-600;
-//$success:       $green;
-//$info:          $blue;
-//$warning:       $yellow;
-//$danger:        $red;
-//$light:         $gray;
+$secondary:     $gray-600;
+$success:       $green;
+$info:          $blue;
+$warning:       $yellow;
+$danger:        $red;
+$light:         $gray;
 $dark:          $slate;
+
+$theme-colors: ();
+$theme-colors: map-merge((
+  "primary":    $primary,
+  "secondary":  $secondary,
+  "success":    $success,
+  "info":       $info,
+  "warning":    $warning,
+  "danger":     $danger,
+  "light":      $light,
+  "dark":       $dark
+), $theme-colors);
 
 /**
  * Combine all colors and grays so that they become css variables.
@@ -106,6 +131,7 @@ $dark:          $slate;
 $colors: (
   "white": $white,
   "black": $black,
+  "highlighter": $highlighter,
 );
 
 // Add custom colors.
