@@ -31,15 +31,17 @@ content:
     settings: {  }
     third_party_settings: {  }
   field_add_row:
-    type: entity_reference_paragraphs
+    type: paragraphs
     weight: 122
     settings:
       title: Paragraph
       title_plural: Paragraphs
       edit_mode: open
+      closed_mode: summary
+      autocollapse: none
       add_mode: dropdown
       form_display_mode: default
-      default_paragraph_type: ''
+      default_paragraph_type: row
     third_party_settings: {  }
     region: content
   path:
@@ -89,4 +91,6 @@ content:
   url_redirects:
     weight: 50
     region: content
+    settings: {  }
+    third_party_settings: {  }
 hidden: {  }

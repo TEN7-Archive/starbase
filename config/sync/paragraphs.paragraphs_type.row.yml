@@ -1,9 +1,11 @@
 uuid: 369507fa-cdc6-4790-96f7-a79078307a3e
 langcode: en
 status: true
-dependencies: {  }
+dependencies:
+  content:
+    - 'file:file:9702d6de-3d08-4bdd-af3b-ce0b78fa94ca'
 id: row
 label: Row
-icon_uuid: null
+icon_uuid: 9702d6de-3d08-4bdd-af3b-ce0b78fa94ca
 description: 'Generic multi-purpose paragraph type with multiple view mode options.'
 behavior_plugins: {  }
