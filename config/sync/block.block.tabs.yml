@@ -9,7 +9,7 @@ _core:
 id: tabs
 theme: starbase
 region: page_header
-weight: -2
+weight: -5
 provider: null
 plugin: local_tasks_block
 settings:

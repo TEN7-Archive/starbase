@@ -9,7 +9,7 @@ _core:
 id: primary_actions
 theme: starbase
 region: page_header
-weight: -1
+weight: -4
 provider: null
 plugin: local_actions_block
 settings:

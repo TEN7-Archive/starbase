@@ -1,6 +1,6 @@
 uuid: c6414872-9ff9-4cbd-a481-be4dedc422d3
 langcode: en
-status: true
+status: false
 dependencies:
   config:
     - system.menu.account
@@ -13,7 +13,7 @@ _core:
 id: nav_user
 theme: starbase
 region: footer
-weight: 0
+weight: -4
 provider: null
 plugin: 'system_menu_block:account'
 settings:

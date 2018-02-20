@@ -8,8 +8,8 @@ _core:
   default_config_hash: ee60d49VPvCRg-SXmw7Ci9j2syiHwQVhj-N8OXlN7CE
 id: page_title
 theme: starbase
-region: page_header
-weight: -3
+region: content
+weight: -5
 provider: null
 plugin: page_title_block
 settings:
