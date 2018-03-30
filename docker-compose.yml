@@ -1,7 +1,7 @@
 version: '3'
 services:
   web:
-    image: ten7/dockstack-php-apache:latest
+    image: ten7/flight-deck-web:latest
     ports:
       - "80:80"
     env_file:
@@ -10,13 +10,14 @@ services:
       - ./src:/var/www/html:cached
       - ./config:/var/www/config:cached
   db:
-    image: ten7/dockstack-mysql
+    image: ten7/flight-deck-db
     ports:
       - 3306:3306
     env_file:
       - .env
     volumes:
       - /var/lib/mysql
+      - ./db-backups:/tmp/db-backups:cached
   memcached:
     image: memcached:1.4-alpine
   pma:
@@ -35,18 +36,27 @@ services:
     image: mailhog/mailhog
     ports:
       - "8002:8025"
-  solr:
-    image: ten7/dockstack-solr:5.5
-    env_file:
-      - .env
-    ports:
-      - "8003:8983"
-  varnish:
-    image: ten7/dockstack-varnish:4.0
-    depends_on:
-      - web
-    env_file:
-      - .env
-    ports:
-      - "8004:6081" # HTTP Proxy
-      - "8005:6082" # Control terminal
+  # solr:
+  #   image: ten7/flight-deck-solr:5.5
+  #   env_file:
+  #     - .env
+  #   ports:
+  #     - "8003:8983"
+  # varnish:
+  #   image: ten7/flight-deck-varnish:4.0
+  #   depends_on:
+  #     - web
+  #   env_file:
+  #     - .env
+  #   ports:
+  #     - "8004:6081" # HTTP Proxy
+  #     - "8005:6082" # Control terminal
+  #
+  ## Webgrind lets you example XDebug profiling files without kcachegrind.
+  #
+  # webgrind:
+  #   image: clue/webgrind
+  #   ports:
+  #     - "8006:80"
+  #   volumes:
+  #     - ./src:/tmp
