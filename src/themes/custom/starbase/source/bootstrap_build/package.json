@@ -16,8 +16,8 @@
     "Opera >= 30"
   ],
   "scripts": {
-    "style": "sass bootstrap_overrides.scss | postcss --use autoprefixer -o dist/custom.css",
-    "style-min": "sass bootstrap_overrides.scss --style compressed | postcss --use autoprefixer -o dist/custom.min.css",
+    "style": "sass bootstrap_overrides.scss | postcss --use autoprefixer -o dist/custom-bootstrap.css",
+    "style-min": "sass bootstrap_overrides.scss --style compressed | postcss --use autoprefixer -o dist/custom-bootstrap.min.css",
     "all": "npm-run-all --parallel style style-min"
   },
   "author": "",
