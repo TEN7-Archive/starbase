@@ -16,15 +16,17 @@
     "Opera >= 30"
   ],
   "scripts": {
-    "style": "sass bootstrap_overrides.scss | postcss --use autoprefixer -o dist/custom-bootstrap.css",
-    "style-min": "sass bootstrap_overrides.scss --style compressed | postcss --use autoprefixer -o dist/custom-bootstrap.min.css",
-    "all": "npm-run-all --parallel style style-min"
+    "style": "sass bootstrap_overrides.scss | postcss --use autoprefixer -o dist/css/custom-bootstrap.css",
+    "style-min": "sass bootstrap_overrides.scss --style compressed | postcss --use autoprefixer -o dist/css/custom-bootstrap.min.css",
+    "copy-js": "cpx \"node_modules/bootstrap/dist/js/*.js\" dist/js",
+    "all": "npm-run-all --parallel style style-min copy-js"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
     "autoprefixer": "^8.2.0",
     "bootstrap": "^4.1.0",
+    "cpx": "^1.5.0",
     "npm-run-all": "^4.1.2",
     "postcss-cli": "^5.0.0"
   }

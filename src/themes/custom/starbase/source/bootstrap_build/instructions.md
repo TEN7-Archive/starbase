@@ -4,7 +4,9 @@ Projects should include a custom-built version of bootstrap. This allows you to 
 This directory contains files to compile a custom bootstrap installation for the site being built.
 It uses NPM to load bootstrap files and override scss files for overwriting default bootstrap styles.
 
-Additional site styles DO NOT belong in this directory. Include them in the theme's SCSS directory files. 
+This also copies js files from the bootstrap node_module to make including bootstrap files in your theme easier.
+
+Additional site theme styles DO NOT belong in this directory. Include them in the theme's SCSS directory files. 
 
 NOTE: if you don't require any bootstrap overrides you can skip the following steps and simply make sure your theme global library includes `bootstrap-build/dist/custom-bootstrap.min.css`
 
@@ -27,6 +29,11 @@ More info can be found at <https://github.com/browserslist/browserslist>
 
 ### 3. Compile new styles: 
 Files will need to be compiled after any changes.
+
+In most cases, after you're done making changes you should compile styles and update js files from the bootstrap node_module. 
+
+`npm run all`
+
 Uncompiled: `npm run style` saves to dist/custom-bootstrap.css
 
 Compiled: `npm run style-min` saves to dist/custom-bootstrap.min.css
