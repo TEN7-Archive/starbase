@@ -4,11 +4,12 @@ Projects should include a custom-built version of bootstrap. This allows you to 
 This directory contains files to compile a custom bootstrap installation for the site being built.
 It uses NPM to load bootstrap files and override scss files for overwriting default bootstrap styles.
 
-This also copies js files from the bootstrap node_module to make including bootstrap files in your theme easier.
+This package also copies js files from the bootstrap node_module to make including bootstrap files in your theme easier. 
 
-Additional site theme styles DO NOT belong in this directory. Include them in the theme's SCSS directory files. 
+ATTENTION: if you don't require any bootstrap overrides you can skip the following steps and simply make sure your theme global library includes `bootstrap-build/dist/css/custom-bootstrap.min.css`
+And the js files can be included from `bootstrap-build/dist/js/bootstrap.bundle.js` (includes popper but not jquery)
 
-NOTE: if you don't require any bootstrap overrides you can skip the following steps and simply make sure your theme global library includes `bootstrap-build/dist/custom-bootstrap.min.css`
+Additional site theme styles DO NOT belong in this directory. Include them in the theme's SCSS directory files.
 
 ## Compiling instructions
 ### 1. Install npm modules 
@@ -34,9 +35,11 @@ In most cases, after you're done making changes you should compile styles and up
 
 `npm run all`
 
-Uncompiled: `npm run style` saves to dist/custom-bootstrap.css
+You can also compile styles separately.
 
-Compiled: `npm run style-min` saves to dist/custom-bootstrap.min.css
+Uncompiled: `npm run style` saves to dist/css/custom-bootstrap.css
+
+Compiled: `npm run style-min` saves to dist/css/custom-bootstrap.min.css
 
 
 ## Include compiled files in the project
