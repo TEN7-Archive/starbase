@@ -3,3 +3,5 @@ source/css/*
 .sass-cache/*
 source/.sass-cache/*
 !.gitkeep
+node_modules
+npm-debug.log
