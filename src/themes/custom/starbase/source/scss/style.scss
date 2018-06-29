@@ -1,8 +1,7 @@
 @import "bootstrap_overrides/*";
-@import "../vendor/bootstrap-4.0.0/scss/bootstrap";
+@import "../node_modules/bootstrap/scss/bootstrap";
 @import "abstracts/*";
 @import "base/*";
 @import "../_patterns/**/*";
-
 @import "mixins";
 @import "mixins_flexbox";
