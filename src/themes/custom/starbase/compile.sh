@@ -16,4 +16,8 @@ echo -e "\nCompiling Pattern Lab public directory...\n";
 cd $BASEDIR/../../../patternlab;
 php core/console --generate;
 
+echo -e "\nAdd legacy browser support to our compiled styles...\n";
+cd $BASEDIR/source;
+npm run prefix-css;
+
 echo -e "\nFinished\n";
