@@ -10,6 +10,7 @@
         "drupal/bg_image_formatter": "^1.1",
         "drupal/block_visibility_groups": "^1.1",
         "drupal/components": "^1.0",
+        "drupal/console": "^1.8",
         "drupal/core": "~8.4",
         "drupal/devel": "^1.2",
         "drupal/field_group": "^1.0",
@@ -22,7 +23,7 @@
         "drupal/twig_field_value": "^1.1",
         "drupal/view_mode_selector": "1.x-dev",
         "drush/drush": "^9.0.0",
-        "pattern-lab/core": "^2.8.0",
+        "pattern-lab/core": "dev-develop",
         "pattern-lab/drupal-twig-components": "^2.0.0",
         "pattern-lab/patternengine-twig": "^2.0.0",
         "pattern-lab/plugin-data-inheritance": "^1.0",
@@ -81,6 +82,10 @@
         {
             "type": "composer",
             "url": "https://packages.drupal.org/8"
+        },
+        {
+            "type": "git",
+            "url": "https://github.com/ten7/patternlab-php-core.git"
         }
     ]
 }
