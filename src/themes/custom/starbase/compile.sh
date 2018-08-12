@@ -1,23 +1,23 @@
 #!/bin/sh
 cd $(dirname "$0");
-BASEDIR=$(pwd);
+THEMEDIR=$(pwd);
 
 echo -e "\nCompiling source/scss to source/css...\n";
-cd $BASEDIR;
+cd $THEMEDIR;
 sass --update --force --scss -r sass-globbing source/scss/:source/css/
 
 echo -e "\nAggregating pattern JS files to source/js/patterns.js...\n";
-cd $BASEDIR/source;
+cd $THEMEDIR/source;
 echo -e "JS files found:";
 find ./_patterns -type f -name '*.js';
 find ./_patterns -type f -name '*.js' -exec cat {} ';' > js/patterns.js
 
 echo -e "\nCompiling Pattern Lab public directory...\n";
-cd $BASEDIR/../../../patternlab;
+cd $THEMEDIR/../../../patternlab;
 php core/console --generate;
 
 echo -e "\nAdd legacy browser support to our compiled styles...\n";
-cd $BASEDIR/source;
-npm run prefix-css;
+cd $THEMEDIR;
+`npm bin`/postcss --config source/js/postcss.config.js --replace "source/css/style.css";
 
 echo -e "\nFinished\n";

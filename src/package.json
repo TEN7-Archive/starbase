@@ -4,8 +4,7 @@
   "description": "TEN7 Starbase",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "prefix-css": "postcss --config postcss.config.js --replace \"css/style.css\""
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": {
     "name": "The TEN7 Starbase Authors",

@@ -5,9 +5,9 @@ global:
     base:
       source/css/style.css: {}
   js:
-    source/node_modules/jquery/dist/jquery.min.js: {}
-    source/node_modules/popper.js/dist/popper.min.js: {}
-    source/node_modules/bootstrap/dist/js/bootstrap.bundle.js: {}
+    /node_modules/jquery/dist/jquery.min.js: {}
+    /node_modules/popper.js/dist/popper.min.js: {}
+    /node_modules/bootstrap/dist/js/bootstrap.bundle.js: {}
   dependencies:
     - core/drupal
     - core/normalize
